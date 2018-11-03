@@ -6,9 +6,10 @@ var jumboHeight = $('.jumbotron').outerHeight();
 
 function parallax(){
     var scrolled = $(window).scrollTop();
-    $('header').css('background-position-y', (-scrolled/5) + 'px');
+    $('header').css('background-position-y', (-scrolled) + 'px');
 }
 
 $(window).scroll(function(e){
     parallax();
 });
+

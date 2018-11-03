@@ -10,3 +10,15 @@
   font-weight: 400;
   src: local('Exo Regular'), local('Exo-Regular'), url(/fonts/Exo-Regular.ttf) format('truetype');
 }
+
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-opensans {
+  font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
+}

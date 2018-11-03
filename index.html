@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/newreqs.css"> -->
 
     <!-- for debugging css / ghost code -->
     <!-- <style>
@@ -18,6 +19,10 @@
 </head>
 
 <body>
+
+
+
+    <!-- fixed navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top" id="mainNav">
         <div class="container">
             <!-- hamburger button for smaller screens -->
@@ -34,7 +39,6 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                 <ul class="nav nav-pills">
                     <li class="nav-item mr-5">
-                        <!-- nav bar content here -->
                         <a class="nav-link active" data-toggle="pill" href="#newReq">New Request</a>
                     </li>
                     <li class="nav-item mr-5">
@@ -48,28 +52,96 @@
                 </ul>
             </div>
 
-
             <!-- logout button : create a form if required -->
             <button id="loginbtn" class="btn btn-login float-right">Log Out</button>
         </div>
     </nav>
 
+    <!-- portal image and name -->
     <header class="jumbotron" style="background-image: url('/img/jumbo.jpg'); background-size: 100%;">
         <h1>Portal name</h1>
     </header>
 
+
+
+
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+
+
+
+
+
+
+
     <div class="tab-content">
-        
 
 
         <!-- New Request Page -->
         <div id="newReq" class="container tab-pane active">
-            <div class="row">
-                <h3>Create New Request</h3>
-            </div>
-            <div class="row">
+            <div class="card">
+                <h3 class="card-title card-header">Create New Request</h3>
                 <form action="/newRequest" method="post">
-                    
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-md-2 offset-2">
+                                <label class="col-form-label-lg">
+                                    Full name
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="full_name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2 offset-2">
+                                <label class="col-form-label-lg">
+                                    Registeration No.
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="regno" placeholder="Your Enrollment Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2 offset-2">
+                                <label class="col-form-label-lg">
+                                    Email address
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="email" name="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2 offset-2">
+                                <label class="col-form-label-lg">
+                                    Contact Number
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="tel" name="phone" placeholder="Prefix the ISD code (eg. +919935XXXXXX)">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2 offset-2">
+                                <label class="col-form-label-lg">Postal Address</label>
+                            </div>
+                            <div class="col-md-6">
+                                <textarea class="form-control" rows="7" name="address" placeholder="Your documents shall be sent to this address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="offset-11">
+                            <button class="btn btn-outline-success w-100" type="submit">Next</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -98,8 +170,19 @@
                     totam rem aperiam.</p>
             </div>
         </div>
+
+
+
     </div>
 
+
+
+
+
+
+
+
+    <!-- load scripts at end to fasten site load time -->
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper/index.js"></script>
