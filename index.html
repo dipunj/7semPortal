@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
     <title>Portal Name</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400"> -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -58,22 +59,48 @@
     </header>
 
     <div class="tab-content">
+        
+
+
+        <!-- New Request Page -->
         <div id="newReq" class="container tab-pane active">
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
+            <div class="row">
+                <h3>Create New Request</h3>
+            </div>
+            <div class="row">
+                <form action="/newRequest" method="post">
+                    
+                </form>
+            </div>
         </div>
+
+
+
+        <!-- Check Status Page -->
         <div id="status" class="container tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+            <div class="row">
+                <h3>Status</h3>
+            </div>
+            <div class="row">
+                <p>Server Response</p>
+            </div>
         </div>
+
+
+
+        <!-- Charges Page -->
         <div id="charges" class="container tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam.</p>
+            <div class="row">
+                <h3>Charges</h3>
+            </div>
+            <div class="row">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam.</p>
+            </div>
         </div>
     </div>
+
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper/index.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

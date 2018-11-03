@@ -41,7 +41,7 @@ body {
 }
 
 .nav-pills .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.055);
+    background-color: rgb(66, 133, 244,0.1);
 }
 
 .nav-pills .nav-link.active {
