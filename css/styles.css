@@ -17,15 +17,14 @@ body {
 }
 
 
-.btn-login {
+.btn-logout {
     color: #fff;
-    background-color: #212527;
-    border-color: #4e0c0c;
+    background-color: black;
+    border-color: black;
     /*set the color you want here*/
 }
 
-.btn-login:hover,
-.btn-login:focus {
+.btn-logout:hover {
     color: #fff;
     background-color: #DB4437;
     border-color: #DB4437;

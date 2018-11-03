@@ -47,13 +47,13 @@
                     </li>
                     <li class="nav-item mr-5">
                         <!-- nav bar content here -->
-                        <a class="nav-link" data-toggle="pill" href="#charges">Charges</a>
+                        <a class="nav-link" data-toggle="pill" href="#charges">Pricing</a>
                     </li>
                 </ul>
             </div>
 
             <!-- logout button : create a form if required -->
-            <button id="loginbtn" class="btn btn-login float-right">Log Out</button>
+            <button id="loginbtn" class="btn btn-logout float-right">Log Out</button>
         </div>
     </nav>
 
@@ -87,8 +87,8 @@
 
         <!-- New Request Page -->
         <div id="newReq" class="container tab-pane active">
-            <div class="card">
-                <h3 class="card-title card-header">Create New Request</h3>
+        <div class="card">
+            <h3 class="card-title card-header">Create New Request</h3>
                 <form action="/newRequest" method="post">
                     <div class="card-body">
                         <div class="form-group row">
@@ -98,7 +98,7 @@
                                 </label>
                             </div>
                             <div class="col-md-6">
-                                <input class="form-control" type="text" name="full_name">
+                                <input class="form-control" type="text" name="full_name" placeholder="As registered with us">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -142,7 +142,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="offset-11">
-                            <button class="btn btn-outline-success w-100" type="submit">Next</button>
+                            <button class="btn btn-outline-success w-100" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -167,8 +167,8 @@
                                     <table class="mt-5 table table-success">
                                         <tbody>
                                             <tr>
-                                                <td style="text-align: center; vertical-align:middle;" rowspan="4"><strong>Documents
-                                                        Requested</strong></td>
+                                                <!-- BACKEND: change rowspan="4" to whatever is the number of type of documents requested+1 -->
+                                                <td style="text-align: center; vertical-align:middle;" rowspan="4"><strong>Documents Requested</strong></td>
                                             </tr>
                                             <tr>
                                                 <td>Degree</td>
@@ -204,7 +204,7 @@
 
         <!-- Charges Page -->
         <div id="charges" class="container tab-pane fade">
-            
+
             <div id="chargeDeck" class="card-deck">
 
                 <!-- copy the following block to create more items -->
