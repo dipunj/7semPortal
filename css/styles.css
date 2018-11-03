@@ -1,18 +1,14 @@
-body{
-    padding-top:80px;
+body {
+    padding-top: 80px;
 }
 
 .scrolled {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-    
-    /* the rest of your styling */
 }
 
 .navbar {
-    position: fixed;
-    z-index: 300;
     height: 80px;
 }
 
@@ -24,19 +20,30 @@ body{
 .btn-login {
     color: #fff;
     background-color: #212527;
-    border-color: #4e0c0c; /*set the color you want here*/
+    border-color: #4e0c0c;
+    /*set the color you want here*/
 }
-.btn-login:hover, .btn-login:focus, .btn-login:active, .btn-login.active, .open>.dropdown-toggle.btn-login {
+
+.btn-login:hover,
+.btn-login:focus {
     color: #fff;
-    background-color:#528bca;
-    border-color:#528bca;
-    box-shadow: 0 3px 5px 0 gray;
+    background-color: #DB4437;
+    border-color: #DB4437;
+    box-shadow: 0 2px 5px 0 gray;
 }
 
 .jumbotron {
-  height: 250px;
-  color: white;
-  text-shadow: #444 0 1px 1px;
-  background:transparent;
-  border-radius: 0 0;
+    height: 250px;
+    color: white;
+    text-shadow: #444 0 1px 1px;
+    background: transparent;
+    border-radius: 0 0;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #4285F4;
 }

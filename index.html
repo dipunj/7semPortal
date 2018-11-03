@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- for debugging css / ghost code -->
     <!-- <style>
         * { background: #000 !important; color: #0f0 !important; outline: solid #f00 1px !important; }
@@ -16,50 +17,67 @@
 </head>
 
 <body>
-    <nav id="mainNav" class="navbar navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top" id="mainNav">
         <div class="container">
+            <!-- hamburger button for smaller screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <a href="#" class="navbar-brand __title mr-auto">
                 <strong>Welcome</strong>, Manmeet
             </a>
+
+            <!-- navbar buttons -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="nav nav-pills">
+                    <li class="nav-item mr-5">
+                        <!-- nav bar content here -->
+                        <a class="nav-link active" data-toggle="pill" href="#newReq">New Request</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <!-- nav bar content here -->
+                        <a class="nav-link" data-toggle="pill" href="#status">Status</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <!-- nav bar content here -->
+                        <a class="nav-link" data-toggle="pill" href="#charges">Charges</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- logout button : create a form if required -->
             <button id="loginbtn" class="btn btn-login float-right">Log Out</button>
         </div>
     </nav>
-    
+
     <header class="jumbotron" style="background-image: url('/img/jumbo.jpg'); background-size: 100%;">
         <h1>Portal name</h1>
     </header>
-    
-    <div class="container">
-        <h2>Dynamic Tabs</h2>
-        <ul class="nav nav-pills">
-          <li class="nav-item active"><a data-toggle="tab" href="#home">Home</a></li>
-          <li class="nav-item"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-          <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-        </ul>
-      
-        <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
+
+    <div class="tab-content">
+        <div id="newReq" class="container tab-pane active">
             <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div id="menu1" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div id="menu2" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </div>
-          <div id="menu3" class="tab-pane fade">
-            <h3>Menu 3</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-          </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.</p>
         </div>
-      </div>    
+        <div id="status" class="container tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <div id="charges" class="container tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam.</p>
+        </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper/index.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
