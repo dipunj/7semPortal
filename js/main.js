@@ -1,5 +1,5 @@
 $(document).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 0);
+    $('#mainNav').toggleClass('scrolled', $(this).scrollTop() > 0);
 });
 
 var jumboHeight = $('.jumbotron').outerHeight();

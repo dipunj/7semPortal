@@ -134,8 +134,8 @@ button:hover {
 
 .login100-form-title {
   display: block;
-  font-family: Poppins-Bold;
-  font-size: 39px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
@@ -196,16 +196,15 @@ button:hover {
   width: 0;
   height: 2px;
 
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
 
-  background: #57b846;
+  background: #F4B400;
 }
 
 .focus-input100::after {
-  font-family: Poppins-Medium;
   font-size: 18px;
   color: #999999;
   line-height: 1.2;
@@ -218,10 +217,10 @@ button:hover {
   left: 0px;
   padding-left: 5px;
 
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .input100:focus + .focus-input100::after {
@@ -257,30 +256,23 @@ button:hover {
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
 
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  width: 100%;
+  width: 50%;
   height: 50px;
-  background-color: #57b846;
-  border-radius: 25px;
+  background-color: #4285F4;
+  border-radius: 10px;
 
-  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -moz-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -o-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  box-shadow: 0 30px 50px 0px rgba(70, 100, 184, 0.6);
+  -moz-box-shadow: 0 30px 50px 0px rgba(70, 100, 184, 0.6);
+  -webkit-box-shadow: 0 30px 50px 0px rgba(70, 100, 184, 0.6);
+  -o-box-shadow: 0 30px 50px 0px rgba(70, 100, 184, 0.6);
+  -ms-box-shadow: 0 30px 50px 0px rgba(70, 100, 184, 0.6);
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -289,14 +281,14 @@ button:hover {
 }
 
 .login100-form-btn:hover  {
-  background-color: #333333;
-  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  background-color: #0F9D58;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.4);
+  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.4);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.4);
+  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.4);
+  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.4);
 }
-
 
 
 /*------------------------------------------------------------------
