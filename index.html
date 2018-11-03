@@ -37,7 +37,7 @@
 
             <!-- navbar buttons -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills row">
                     <li class="nav-item mr-5">
                         <a class="nav-link active" data-toggle="pill" href="#newReq">New Request</a>
                     </li>
@@ -167,7 +167,8 @@
                                     <table class="mt-5 table table-success">
                                         <tbody>
                                             <tr>
-                                                <td style="text-align: center; vertical-align:middle;" rowspan="4"><strong>Documents Requested</strong></td>
+                                                <td style="text-align: center; vertical-align:middle;" rowspan="4"><strong>Documents
+                                                        Requested</strong></td>
                                             </tr>
                                             <tr>
                                                 <td>Degree</td>
@@ -183,7 +184,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <h6 class="text-right card-subtitle text-primary">Total Amount: 4500 INR</h6>
+                                    <h6 class="text-right card-subtitle text-primary">Total Amount: ₹4500</h6>
                                 </div>
                                 <div class="card-footer">
                                     <small class="text-muted">Courier Name</small>
@@ -203,32 +204,65 @@
 
         <!-- Charges Page -->
         <div id="charges" class="container tab-pane fade">
-            <div class="row">
-                <h3>Charges</h3>
+            
+            <div id="chargeDeck" class="card-deck">
+
+                <!-- copy the following block to create more items -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm border-success">
+                        <div class="card-body">
+                            <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                            <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                            <h1 class="card-title text-right">₹4500</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h4 class="my-0 mb-2 font-weight-light">Marksheets</h4>
+                            <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                            <h1 class="card-title text-right">₹2000</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm border-danger">
+                        <div class="card-body">
+                            <h4 class="my-0 mb-2 font-weight-light">Transcript</h4>
+                            <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                            <h1 class="card-title text-right">₹3500</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm border-warning">
+                        <div class="card-body">
+                            <h4 class="my-0 mb-2 font-weight-light">Character Certificate</h4>
+                            <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                            <h1 class="card-title text-right">₹3500</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam.</p>
-            </div>
+
         </div>
 
 
 
-    </div>
 
 
 
 
 
+        <!-- load scripts at end to fasten site load time -->
 
-
-
-    <!-- load scripts at end to fasten site load time -->
-
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper/index.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper/index.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

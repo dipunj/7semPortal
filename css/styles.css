@@ -56,3 +56,11 @@ body {
 .form-group.row {
     margin-top: 20px;
 }
+
+div#chargeDeck >div.col-md-4>div.card>div.card-body {
+    padding-bottom: 0px;
+}
+
+#chargeDeck {
+    margin-bottom: 300px;
+}
