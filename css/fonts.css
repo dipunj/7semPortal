@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Exo Light'), local('Exo-Light'), url(/fonts/Exo-Light.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Exo Regular'), local('Exo-Regular'), url(/fonts/Exo-Regular.ttf) format('truetype');
-}
-
 .font-robo {
   font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
 }

@@ -31,6 +31,17 @@ body {
     box-shadow: 0 2px 5px 0 gray;
 }
 
+.btn-cart {
+    color: #4285F4;
+    border-color: rgba(199, 199, 199, 0.363) !important;
+    border-radius: 25px !important;
+}
+
+.btn-cart:hover {
+    background: rgba(66, 134, 244, 0.100);
+    border-color: #4285F4 !important;
+}
+
 .jumbotron {
     height: 380px;
     color: white;

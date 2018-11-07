@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
     <title>Document Portal, MNNIT</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400"> -->
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/newreqs.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 
     <!-- for debugging css / ghost code -->
     <!-- <style>
@@ -86,56 +88,155 @@
 
 
         <!-- New Request Page -->
-        <div id="newReq" class="container tab-pane active">
+        <div id="newReq" class="container tab-pane active mt-5">
             <form action="/selectChoices" method="post">
-                <div class="container">
+                <div class="container pt-5">
+                    <div class="row">
+                        <!-- copy the following div block to create more items -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-success">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- copy the following div block to create more items -->
-                    <div class="col-12 col-md-5">
-                        <div class="card mb-0 mt-4 shadow-sm border-success">
-                            <div class="card-body">
-                                <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
-                                <h1 class="card-title text-right">₹4500</h1>
-                                <div class="form-group row align-content-center">
-                                    <div class="col mr-auto">
-                                        <label for="inputdefault">Set of 4 copies x</p>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-warning">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
                                     </div>
-                                    <div class="col-4">
-                                        <input class="form-control form-control-sm" id="inputdefault" type="text">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col">
-                                        <button class="btn btn-primary float-right">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-primary">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="card mb-0 mt-4 shadow-sm border-primary">
-                            <div class="card-body">
-                                <h4 class="my-0 mb-2 font-weight-light">Marksheets</h4>
-                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
-                                <h1 class="card-title text-right">₹2000</h1>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-danger">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="card mb-0 mt-4 shadow-sm border-danger">
-                            <div class="card-body">
-                                <h4 class="my-0 mb-2 font-weight-light">Transcript</h4>
-                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
-                                <h1 class="card-title text-right">₹3500</h1>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-info">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="card mb-0 mt-4 shadow-sm border-warning">
-                            <div class="card-body">
-                                <h4 class="my-0 mb-2 font-weight-light">Character Certificate</h4>
-                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
-                                <h1 class="card-title text-right">₹3500</h1>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card mb-4 mt-2 mr-2 shadow-lg border-dark">
+                                <div class="card-body">
+                                    <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                    <h1 class="card-title text-right font-weight-normal">₹4500</h1>
+                                    <div class="form-group row align-content-center">
+                                        <div class="col text-right pr-0">
+                                            <label class="small text-muted" for="input_degree">Number of Sets : </label>
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="form-control form-control-sm" id="input_degree" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button class="btn btn-cart float-right shadow-sm" type="button">
+                                                <span class="material-icons pr-1" style="vertical-align: middle">add_shopping_cart</span>Add
+                                                to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
