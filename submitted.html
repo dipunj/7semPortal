@@ -87,65 +87,60 @@
 
         <!-- New Request Page -->
         <div id="newReq" class="container tab-pane active">
-            <form action="/newRequest" method="post">
-                <div class="card">
-                    <h3 class="card-title card-header">Create New Request</h3>
-                    <div class="card-body">
-                        <div class="form-group row">
-                            <div class="col-md-3 offset-md-1">
-                                <label class="col-form-label-lg">
-                                    Full name
-                                </label>
-                            </div>
-                            <div class="offset-md-1 col-md-6">
-                                <input class="form-control" type="text" name="full_name" placeholder="As registered with us">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-3 offset-md-1">
-                                <label class="col-form-label-lg">
-                                    Registeration No.
-                                </label>
-                            </div>
-                            <div class="offset-md-1 col-md-6">
-                                <input class="form-control" type="text" name="regno" placeholder="Your Enrollment Number">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-3 offset-md-1">
-                                <label class="col-form-label-lg">
-                                    Email address
-                                </label>
-                            </div>
-                            <div class="offset-md-1 col-md-6">
-                                <input class="form-control" type="email" name="email" placeholder="example@email.com">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-3 offset-md-1">
-                                <label class="col-form-label-lg">
-                                    Contact Number
-                                </label>
-                            </div>
-                            <div class="offset-md-1 col-md-6">
-                                <input class="form-control" type="tel" name="phone" placeholder="Prefix the ISD code (eg. +919935XXXXXX)">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-3 offset-md-1">
-                                <label class="col-form-label-lg">
-                                    Postal Address
-                                </label>
-                            </div>
-                            <div class="offset-md-1 col-md-6">
-                                <textarea class="form-control" rows="7" name="address" placeholder="Your documents shall be sent to this address"></textarea>
+            <form action="/selectChoices" method="post">
+                <div class="container">
+
+                    <!-- copy the following div block to create more items -->
+                    <div class="col-12 col-md-5">
+                        <div class="card mb-0 mt-4 shadow-sm border-success">
+                            <div class="card-body">
+                                <h4 class="my-0 mb-2 font-weight-light">Degree</h4>
+                                <h1 class="card-title text-right">₹4500</h1>
+                                <div class="form-group row align-content-center">
+                                    <div class="col mr-auto">
+                                        <label for="inputdefault">Set of 4 copies x</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <input class="form-control form-control-sm" id="inputdefault" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <button class="btn btn-primary float-right">Add to Cart</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer">
-                        <button class="btn btn-outline-success float-right" type="submit">Submit</button>
+                    <div class="col-12 col-md-5">
+                        <div class="card mb-0 mt-4 shadow-sm border-primary">
+                            <div class="card-body">
+                                <h4 class="my-0 mb-2 font-weight-light">Marksheets</h4>
+                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                                <h1 class="card-title text-right">₹2000</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="card mb-0 mt-4 shadow-sm border-danger">
+                            <div class="card-body">
+                                <h4 class="my-0 mb-2 font-weight-light">Transcript</h4>
+                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                                <h1 class="card-title text-right">₹3500</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="card mb-0 mt-4 shadow-sm border-warning">
+                            <div class="card-body">
+                                <h4 class="my-0 mb-2 font-weight-light">Character Certificate</h4>
+                                <p class="text-muted text-right card-subtitle">Set of 4 copies</p>
+                                <h1 class="card-title text-right">₹3500</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </form>
         </div>
 
