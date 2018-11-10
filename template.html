@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
-    <title>Portal Name</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document Portal, MNNIT</title>
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:100,300,400">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- for debugging css / ghost code -->
     <!-- <style>
@@ -17,36 +19,79 @@
 </head>
 
 <body>
+
+
+
+    <!-- fixed navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top" id="mainNav">
         <div class="container">
-            <a href="#" class="navbar-brand __title mr-auto">
-                <strong>Welcome</strong>, Manmeet
-            </a>
+            <!-- hamburger button for smaller screens -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
+            <a href="#" class="navbar-brand __title mr-auto">
+                <strong>Welcome</strong>, Manmeet
+            </a>
+
+            <!-- navbar buttons -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="nav nav-pills row">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" data-toggle="pill" href="#bt1">Button1</a>
+                    </li>
+                    <li class="nav-item mr-5">
                         <!-- nav bar content here -->
+                        <a class="nav-link" data-toggle="pill" href="#bt2">Button2</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <!-- nav bar content here -->
+                        <a class="nav-link" data-toggle="pill" href="#bt3">Button3</a>
                     </li>
                 </ul>
             </div>
-            <button id="loginbtn" class="btn btn-login float-right">Log Out</button>
+
+            <!-- logout button : create a form if required -->
+            <button id="loginbtn" class="btn btn-logout float-right">Log Out</button>
         </div>
     </nav>
 
+    <!-- portal image and name -->
     <header class="jumbotron" style="background-image: url('/img/jumbo.jpg'); background-size: 100%;">
-        <h1>Portal name</h1>
+        <div class="container p-5">
+            <h1>MNNIT Allahabad</h1>
+            <p>Portal for College documents</p>
+        </div>
     </header>
 
-    <!-- content begins -->
 
 
-    <div class="container">
-        <p>content goes here</p>
+
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+    <!-- MAIN CONTENT BEGINS -->
+
+
+
+
+
+
+
+    <div class="tab-content">
+        <div id="bt1" class="container tab-pane active">
+            <p>bt1 content</p>
+        </div>
+        <div id="bt2" class="container tab-pane">
+            <p>bt2 content</p>
+        </div>
+        <div id="bt3" class="container tab-pane">
+            <p>bt3 content</p>
+        </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
